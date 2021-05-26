@@ -40,9 +40,42 @@ class Menu extends React.Component {
       content = <His />
     }
     return (<div>
-      <span style={{ cursor: "pointer", fontSize: '40px', marginLeft: '100px', color: "green" }} onClick={this.getswitch.bind(this, 1)}>Articles</span>
-      <span style={{ cursor: "pointer", fontSize: '40px', marginLeft: '100px', color: "green" }} onClick={this.getswitch.bind(this, 2)}>Add Resource</span>
-      <span style={{ cursor: "pointer", fontSize: '40px', marginLeft: '100px', color: "green" }} onClick={this.getswitch.bind(this, 3)}>search history</span>
+      <span style={{ 
+        background: "#228B22", 
+        cursor: "pointer", 
+        fontSize: '20px', 
+        marginLeft: '940px', 
+        color: "white", 
+        padding:'0.5px 3px', 
+        border:"3px #00B2EE solid",  
+        boxShadow:"5px 6px 10px #CC00FF"
+        }} 
+        onClick={this.getswitch.bind(this, 1)}>Articles</span>
+      
+      <span style={{ 
+        background: "#228B22", 
+        cursor: "pointer", 
+        fontSize: '20px', 
+        marginLeft: '100px', 
+        color: "white", 
+        padding:'0.5px 3px', 
+        border:"3px #00B2EE solid",  
+        boxShadow:"5px 6px 10px #CC00FF" 
+        }} 
+        onClick={this.getswitch.bind(this, 2)}>Add Resource</span>
+      
+      <span style={{ 
+        background: "#228B22", 
+        cursor: "pointer", 
+        fontSize: '20px', 
+        marginLeft: '100px', 
+        color: "white", 
+        padding:'0.5px 3px', 
+        border:"3px #00B2EE solid",  
+        boxShadow:"5px 6px 10px #CC00FF" 
+        }} 
+        onClick={this.getswitch.bind(this, 3)}>search history</span>
+      
       {
         content
       }
