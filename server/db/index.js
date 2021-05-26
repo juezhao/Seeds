@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const uri = "mongodb+srv://admin:qwer1234@cluster0.qirhx.mongodb.net/Study?retryWrites=true&w=majority";
+const uri = "mongodb+srv://xxxggg:kln651kovbpZKSYP@mernatoz.nrnud.mongodb.net/SEER?retryWrites=true&w=majority";
 
 mongoose.connect(uri, {
     authSource: 'admin',
