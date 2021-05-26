@@ -40,9 +40,9 @@ class Menu extends React.Component {
       content = <His />
     }
     return (<div>
-      <span style={{ cursor: "pointer", marginLeft: '100px', color: "green" }} onClick={this.getswitch.bind(this, 1)}>list</span>
-      <span style={{ cursor: "pointer", marginLeft: '100px', color: "green" }} onClick={this.getswitch.bind(this, 2)}>add</span>
-      <span style={{ cursor: "pointer", marginLeft: '100px', color: "green" }} onClick={this.getswitch.bind(this, 3)}>search history</span>
+      <span style={{ cursor: "pointer", fontSize: '40px', marginLeft: '100px', color: "green" }} onClick={this.getswitch.bind(this, 1)}>list</span>
+      <span style={{ cursor: "pointer", fontSize: '40px', marginLeft: '100px', color: "green" }} onClick={this.getswitch.bind(this, 2)}>add</span>
+      <span style={{ cursor: "pointer", fontSize: '40px', marginLeft: '100px', color: "green" }} onClick={this.getswitch.bind(this, 3)}>search history</span>
       {
         content
       }
