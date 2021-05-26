@@ -8,7 +8,10 @@ const schema = new Schema({
     volume: String,
     number: String,
     pages: String,
-    month: String
+    month: String,
+    claim: String,
+    SEPractice: String,
+    StrengthEvidence: String
 })
 
 module.exports = model('Article', schema)

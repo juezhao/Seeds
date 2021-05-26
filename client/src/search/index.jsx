@@ -14,7 +14,10 @@ export default class Search extends Component {
                 pages: '',
                 journal: '',
                 number: '',
-                volume: ''
+                volume: '',
+                claim: '',
+                SEPractice: '',
+                StrengthEvidence: ''
             },
             list: [],
             columns: [
@@ -57,6 +60,21 @@ export default class Search extends Component {
                     label: 'month',
                     align: 'center',
                     prop: 'month'
+                },
+                {
+                    label: 'claim',
+                    align: 'center',
+                    prop: 'claim'
+                },
+                {
+                    label: 'SEPractice',
+                    align: 'center',
+                    prop: 'SEPractice'
+                },
+                {
+                    label: 'StrengthEvidence',
+                    align: 'center',
+                    prop: 'StrengthEvidence'
                 }
             ]
         }
@@ -144,6 +162,21 @@ export default class Search extends Component {
                     <Layout.Col span="6">
                         <Form.Item label="number">
                             <Input value={condition.number} onChange={this.onChange.bind(this, 'number')}></Input>
+                        </Form.Item>
+                    </Layout.Col>
+                    <Layout.Col span="6">
+                        <Form.Item label="claim">
+                            <Input value={condition.claim} onChange={this.onChange.bind(this, 'claim')}></Input>
+                        </Form.Item>
+                    </Layout.Col>
+                    <Layout.Col span="6">
+                        <Form.Item label="SEPractice">
+                            <Input value={condition.SEPractice} onChange={this.onChange.bind(this, 'SEPractice')}></Input>
+                        </Form.Item>
+                    </Layout.Col>
+                    <Layout.Col span="6">
+                        <Form.Item label="StrengthEvidence">
+                            <Input value={condition.StrengthEvidence} onChange={this.onChange.bind(this, 'StrengthEvidence')}></Input>
                         </Form.Item>
                     </Layout.Col>
                     <Layout.Col span="6">

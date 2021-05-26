@@ -46,6 +46,21 @@ export default class Add extends Component {
                     label: 'month',
                     align: 'center',
                     prop: 'month'
+                },
+                {
+                    label: 'claim',
+                    align: 'center',
+                    prop: 'claim'
+                },
+                {
+                    label: 'SEPractice',
+                    align: 'center',
+                    prop: 'SEPractice'
+                },
+                {
+                    label: 'StrengthEvidence',
+                    align: 'center',
+                    prop: 'StrengthEvidence'
                 }
             ]
         }

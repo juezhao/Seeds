@@ -13,7 +13,10 @@ export default class Add extends Component {
                 pages: '',
                 journal: '',
                 number: '',
-                volume: ''
+                volume: '',
+                claim: '',
+                SEPractice: '',
+                StrengthEvidence: ''
             }
         }
     }
@@ -59,7 +62,7 @@ export default class Add extends Component {
                 this.setState({
                     condition: temp
                 })
-                alert('新增成功')
+                alert('add successfully')
             }
         })
     }
@@ -98,6 +101,21 @@ export default class Add extends Component {
                     <Layout.Col span="6">
                         <Form.Item label="number">
                             <Input value={condition.number} onChange={this.onChange.bind(this, 'number')}></Input>
+                        </Form.Item>
+                    </Layout.Col>
+                    <Layout.Col span="6">
+                        <Form.Item label="claim">
+                            <Input value={condition.claim} onChange={this.onChange.bind(this, 'claim')}></Input>
+                        </Form.Item>
+                    </Layout.Col>
+                    <Layout.Col span="6">
+                        <Form.Item label="SEPractice">
+                            <Input value={condition.SEPractice} onChange={this.onChange.bind(this, 'SEPractice')}></Input>
+                        </Form.Item>
+                    </Layout.Col>
+                    <Layout.Col span="6">
+                        <Form.Item label="StrengthEvidence">
+                            <Input value={condition.StrengthEvidence} onChange={this.onChange.bind(this, 'StrengthEvidence')}></Input>
                         </Form.Item>
                     </Layout.Col>
                     <Layout.Col span="6">

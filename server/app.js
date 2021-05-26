@@ -32,9 +32,9 @@ app.get('/search', async (req, res) => {
 })
 
 app.get('/add', async (req, res) => {
-    const { author, title, journal, year, volume, number, pages, month } = req.query;
+    const { author, title, journal, year, volume, number, pages, month, claim, SEPractice, StrengthEvidence} = req.query;
     const article = new Article({
-        author, title, journal, year, volume, number, pages, month
+        author, title, journal, year, volume, number, pages, month, claim, SEPractice, StrengthEvidenc 
     })
     await article.save();
     res.json({
