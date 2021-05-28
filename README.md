@@ -1,4 +1,4 @@
-# SEER
+# Seeds
 
 Requirements to start
 
